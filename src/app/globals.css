@@ -3,21 +3,50 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Design tokens */
+  --color-bg: #0d0d0d;
+  --color-surface: #161616;
+  --color-border: #2a2a2a;
+  --color-border-hover: #3d3d3d;
+  --color-text: #e8e8e8;
+  --color-muted: #555555;
+  --color-brand: #4ade80;
+  --color-brand-hover: #22c55e;
+  --color-error: #f87171;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Custom focus ring offset for dark backgrounds */
+*:focus-visible {
+  outline-offset: 2px;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-muted);
 }
 
 @layer utilities {

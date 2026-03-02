@@ -8,9 +8,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        mono: ["var(--font-mono)", "ui-monospace", "Menlo", "monospace"],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        brand: "var(--color-brand)",
+        surface: "var(--color-surface)",
+        border: "var(--color-border)",
+        muted: "var(--color-muted)",
+        error: "var(--color-error)",
+      },
+      animation: {
+        "spin-slow": "spin 2s linear infinite",
       },
     },
   },
