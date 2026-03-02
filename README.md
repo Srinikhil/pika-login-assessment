@@ -1,6 +1,7 @@
 # Pika Login — Take-Home Assessment
 
 A login experience inspired by [pika.me/login](https://pika.me/login), built with Next.js 14, TypeScript, Tailwind CSS, and Framer Motion. This project is for a take home assessment for Pika.art.
+
 ---
 
 ## How to Run Locally
