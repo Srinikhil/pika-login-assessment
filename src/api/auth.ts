@@ -1,9 +1,9 @@
 /**
  * Mock Auth API
  *
- * Simulates network latency (300–1200ms) and returns structured typed results.
+ * Simulates network latency and returns structured typed results.
  *
- * Error trigger cheat-sheet (for README / testing):
+ * Test Scenarios & Expected Results:
  *   email: "timeout@test.com"      → TIMEOUT (client-side)
  *   email: "unverified@test.com"   → 403 Email Not Verified
  *   email: "error@test.com"        → 500 Server Error
